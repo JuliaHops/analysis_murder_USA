@@ -2,20 +2,6 @@
 
 ---
 
-## Введение  
-Анализ данных — это область, связанная с методами и алгоритмами извлечения знаний из данных.  
-В современном обществе анализ играет ключевую роль в выявлении тенденций, например — в раскрытии случаев недопустимого применения силы полицией.  
-
-Цель работы:  
-- проанализировать имеющиеся данные и выявить факторы, влияющие на инциденты применения силы полицией.  
-
-Задачи работы:  
-- составить конвейер для сбора и передачи данных;  
-- определить ключевые показатели для анализа;  
-- визуализировать результаты.  
-
----
-
 ## Основная часть  
 
 ### 1. Набор данных  
@@ -48,13 +34,28 @@
 - Apache Flume — управление потоками данных  
 
 Этапы конвейера:  
-1. Запуск служб HDFS и YARN  
-2. Создание таблицы police_killings в MariaDB  
-3. Экспорт данных в MariaDB (через Sqoop)  
-4. Очистка и приведение типов данных  
-5. Перенос данных в Hive  
-6. Настройка потоковой передачи (Kafka + Flume)  
-7. Организация регулярной выборки и записи данных в HDFS  
+1. Запуск служб HDFS и YARN
+   <img width="1004" height="424" alt="image" src="https://github.com/user-attachments/assets/d9bcf32e-72b8-44bd-b0d6-21c3496ed131" />
+
+3. Создание таблицы police_killings в MariaDB
+   <img width="378" height="553" alt="image" src="https://github.com/user-attachments/assets/d93945ca-c127-43c7-b0a3-e08a91639956" />
+
+5. Экспорт данных в MariaDB (через Sqoop)
+   <img width="974" height="352" alt="image" src="https://github.com/user-attachments/assets/1d52497a-318a-4b70-96be-b8f459fafc19" />
+
+7. Очистка и приведение типов данных
+   <img width="641" height="367" alt="image" src="https://github.com/user-attachments/assets/c82ce0f4-c3c8-458e-b111-c3212a6a8543" />
+ <img width="636" height="436" alt="image" src="https://github.com/user-attachments/assets/fee23320-a1ce-471c-8e3a-54d7b21cbd19" />
+
+9. Перенос данных в Hive
+    <img width="758" height="549" alt="image" src="https://github.com/user-attachments/assets/2619e7a5-707a-49ce-b14f-08736a50849f" />
+
+11. Настройка потоковой передачи (Kafka + Flume)
+    <img width="687" height="606" alt="image" src="https://github.com/user-attachments/assets/cab1b448-136e-4c09-9e71-66152de923b1" />
+    <img width="588" height="513" alt="image" src="https://github.com/user-attachments/assets/fdffe380-463f-4f7a-a5a5-4059171ded91" />
+<img width="774" height="849" alt="image" src="https://github.com/user-attachments/assets/68f858a7-85d8-449b-9026-e86d7bcc9f40" />
+
+13. Организация регулярной выборки и записи данных в HDFS  
 
 ---
 
